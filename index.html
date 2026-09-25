@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lucky | Portfolio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Lucky<span>.</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Lucky</h1>
+      <h2 class="typing" id="typing"></h2>
+      <p class="hero-text">I build clean, functional web experiences from the ground up — front to back.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+        I'm a developer who enjoys turning ideas into working products — from a simple
+        static page to a full application with a real backend and database. I like
+        understanding the whole stack: how the UI, the API, and the data all fit together.
+      </p>
+      <p>
+        Outside of code, I'm drawn to roles and projects where communication matters just
+        as much as technical skill — explaining what I built, and why, clearly and simply.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML5</h3>
+        <div class="bar"><span style="width:90%"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>CSS3</h3>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Git &amp; GitHub</h3>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Backend APIs</h3>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <div class="bar"><span style="width:65%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-thumb">💰</div>
+        <h3>Tally — Fintech Web App</h3>
+        <p>
+          A personal finance app built with a full signup/login flow, input validation,
+          a CRUD backend API, and a database connected to the frontend. Started as a
+          browser-only prototype and evolved into a real client-server application.
+        </p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Backend</span><span>Database</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-btn">Live Demo</a>
+          <a href="#" class="link-btn">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🗂️</div>
+        <h3>Project Two</h3>
+        <p>Short description of a second project — what it does, the problem it solves, and the stack used.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-btn">Live Demo</a>
+          <a href="#" class="link-btn">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">📊</div>
+        <h3>Project Three</h3>
+        <p>Short description of a third project. Swap this card out for anything else you've built.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-btn">Live Demo</a>
+          <a href="#" class="link-btn">Source Code</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-sub">Have a project in mind or just want to say hi? Send a message below.</p>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+    <div class="socials">
+      <a href="https://github.com/luckyogoigbe-dev" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin</a>
+      <a href="mailto:oziogoigbe@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Lucky. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
